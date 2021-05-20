@@ -1,0 +1,22 @@
+/*Given the first 2 terms A1 and A2 of an Arithmetic Series.Find the Nth term of the series. 
+Example 1:
+
+Input:
+A1=2
+A2=3
+N=4
+Output:
+5
+Explanation:
+The series is 2,3,4,5,6....
+Thus,4th term is 5.
+
+
+soln:
+
+n=int(input())
+first=int(input())
+second=int(input())
+difference=second-first
+t=first+(n-1)*difference
+print(n,"th term is",t)
