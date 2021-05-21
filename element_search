@@ -1,0 +1,21 @@
+search for an element in an array?
+
+array=[]
+n=int(input())
+print("enter values to array")
+for i in range(n):
+    x=int(input())
+    array.append(x)
+print(array)
+print("enter the value to be searched:")
+val_search=int(input())
+for e in array:
+    if(e==val_search):
+        print(val_search,"is present in the array")
+    break
+else:   
+    print("not the element")
+
+
+
+
