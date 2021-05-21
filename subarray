@@ -33,6 +33,52 @@ enter values to array
 5
 6
 7
+
+
+
+
+/*given an unsorted array A,with N length ,find a continous  subarray, such that the sum of that continous subarray equal to given sum
+exm:
+input N=5,S=12,A=[1,2,3,7,5]
+output:1st postion to 3rd postion 
+        3rd postion to 4th position*/
+        
+        
+        
+        
+array=[]
+N=int(input())
+s=int(input())
+print("enter values to array")
+for i in range(N):
+    x=int(input()) 
+    array.append(x)
+start=0
+end=0
+sum=0  
+for i in range(0,N):
+    for j in range(i,N):
+        sum=sum+array[j]
+        if(sum==s):
+            start=i
+            end=j
+            break
+    sum=0
+    if(sum==s):
+        break
+    
+print(start," ",end)       
+
+
+
+
+3
+5
+enter values to array
+1
+2
+3
+1   2
 8
 [3, 4, 5, 6, 7, 8]
 [5, 6]
