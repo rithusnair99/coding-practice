@@ -1,0 +1,11 @@
+/* to reverse a string
+example:
+input :I.Love.India
+output:India.Love.I*/
+
+
+
+n=" i.love.india"
+x=n.split(".")
+x.reverse()
+print(".".join(x))
