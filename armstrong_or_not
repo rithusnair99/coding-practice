@@ -14,3 +14,4 @@ if(result==num):
     print(num, "is an amstrong no")
 else:
     print(num, "is not an Armstrong number")
+ ```
