@@ -1,0 +1,23 @@
+sample input:
+dfghjk345678@#$ghj456789
+
+output:
+3456784567
+
+if the no of digit is less than 10,then print impossible???
+
+
+str=input("enter the code:")
+print(str)
+num=""
+result=""
+count=0
+for ch in str:
+    if ch.isdigit():
+        num=num+ch
+if(len(num)<10):
+    print("impossible")
+else:
+    for i in range(10):
+        result=result+num[i]
+    print(result)
